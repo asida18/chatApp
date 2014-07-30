@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="http://192.168.1.239:10000/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="chat.js"></script>
+        <link rel="stylesheet" type = "text/css" href="chat.css">
+	    <title>Instant Chat</title>
+    </head>
+    <body id = "newbg">Web Sockets
+        <div id="main">
+            <form id='loginForm'>
+                <fieldset>
+                    <ledgend>Login</ledgend>
+                    <label for='username'>Username:</label> 
+                    <input type="text" name="username" id="username" />
+                    <button id="login">Log in</button>
+                </fieldset>
+            </form>
+            <section class='hidden' id='chatRoom'>
+                 
+                <label for='url'>Enter image URL:</label> 
+                <input type="text" name="url" id="url" />
+                <button id = "preview"> Preview</button>
+                <button id = "sendImage"> Send Image</button>
+                <div id ="image"></div> 
+                
+                <textarea id="message"></textarea>
+                <br>
+                <label for="background-color">Choose a background color:</label> 
+                <input id="background-color" type="color" />
+                <button type="button" id="send">Send IM</button>
+                <br>
+                <div id="messages"></div>
+            </section>
+        </div>
+    </body>
+</html>
