@@ -29,6 +29,8 @@
                     img.height = 305;
                      // This next line will just add it to the <body> tag
                     document.body.appendChild(img);
+                    console.log(img);
+                    
                         if (confirm("PREVIEW: Press OK to delete preview") === true) 
                             document.body.removeChild(img);
                         else 

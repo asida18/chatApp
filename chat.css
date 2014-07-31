@@ -32,3 +32,9 @@ textarea {
 input {
     border-radius:4px;
 }
+
+h1 {
+    font-family: fantasy;
+    color: dodgerblue;
+    text-decoration: underline;
+}
