@@ -7,7 +7,7 @@
             'click',
                 function(e){
                     e.preventDefault();
-                    socket = io.connect('http://192.168.1.239:10000');
+                    socket = io.connect('http://{SERVER ADDRESS HERE}:10000');
                     username = document.getElementById('username').value;
           
                     serverListener();
